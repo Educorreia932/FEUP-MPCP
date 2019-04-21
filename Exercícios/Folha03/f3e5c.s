@@ -5,5 +5,5 @@
 f3e5c:
 	rbit		W1, W0
 	cmp			W1, W0
-	cset		W0, EQ
+	cset		W0, eq
 	ret
