@@ -2,9 +2,18 @@
 .global f3e3e
 .type f3e3e, "function"
 
-f3e53e:
-	ldr			X1, [X0]
-	rev			X2, X1
-	cmp			X2, X1 //bits resultantes ficam à esquerda
-	cset		W0, eq
+f3e3e:
+	mov			W4, #1
+	sub   		X1, X1, #1
+ciclo:
+	ldrb		W2, [X0], #1
+	ldrb		W3, [X0]
+	cmp			W2, #0
+	beq			fim
+	cmp			W2, W3
+	sub 		X1, X1, #1
+	beq			ciclo
+	mov			W4, #0
+fim:
+	mov			X0, X4
 	ret

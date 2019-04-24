@@ -2,18 +2,28 @@
 #include <stdlib.h>
 
 extern int f3e1a(int *a, int n);
+
 extern int f3e3a(char *s);
 extern int f3e3b(char a, char *s);
 extern int f3e3c(char *s);
 extern int f3e3d(char *s);
-extern int f3e3e(char *s);
+extern int f3e3e(char *s, int length);
+extern int f3e3f(char *s);
+
+extern void f3e4a(char *a, long int *b, int c);
 extern void f3e4b(int *a, long int *b, int c);
+
 extern int f3e5a(long int n);
 extern int f3e5b(char *s);
 extern int f3e5c(int n);
+
 extern void f3e6a(int a);
 extern void f3e6b(int a);
-extern int f3e7d(int n);
+
+extern int f3e7a(int *n1, int *n2, int length);
+extern int f3e7c(int a, int *n);
+extern int f3e7d(int *n1, int *n2);
+
 extern int f3e8a(int n);
 
 void histogram(char *s) {
@@ -32,10 +42,14 @@ void histogram(char *s) {
 }
 
 int main(void) {
-	char string[] = "In computer Programming, a string is traditionally a sequence of characters, either as a literal constant or as some kind of variable.";
+	//char string1[] = "In computer Programming, a string is traditionally a sequence of characters.";
+	//char string2[] = "ANANA";
+	char string3[] = "A a aa, a aa.";
 
-	printf("The number of uppercase characters in the sentence is %d\n", f3e3d(string));
 	//histogram(string);
+	//printf("The number of uppercase characters in the sentence is %d\n", f3e3d(string1));
+	//printf("%d", f3e3e(string2, f3e3a(string2)));
+	printf("The number of words is %d", f3e3f(string3));
 
 	return EXIT_SUCCESS;
 }

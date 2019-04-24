@@ -3,7 +3,7 @@
 .type f3e7d, "function"
 
 f3e7d:
-	eor			X11, X11, X11
+	mov			X11, #0
 ciclo:
 	ldr			W9, [X0]
 	ldr			W10, [X1]
