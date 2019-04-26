@@ -19,12 +19,18 @@ extern int f3e5c(int n);
 
 extern void f3e6a(int a);
 extern void f3e6b(int a);
+extern void f3e6c(int a);
 
 extern int f3e7a(int *n1, int *n2, int length);
 extern int f3e7c(int a, int *n);
 extern int f3e7d(int *n1, int *n2);
 
-extern int f3e8a(int n);
+extern void f3e8a();
+extern void f3e8b();
+
+extern void f3e9a(int n);
+extern void f3e9b(int n);
+extern void f3e9c(int n);
 
 void histogram(char *s) {
 	char alphabet[30] = "abcdefghijklmnopqrstuwvxyz";
@@ -44,12 +50,19 @@ void histogram(char *s) {
 int main(void) {
 	//char string1[] = "In computer Programming, a string is traditionally a sequence of characters.";
 	//char string2[] = "ANANA";
-	char string3[] = "A a aa, a aa.";
+	//char string3[] = "A a aa, a aa.";
 
 	//histogram(string);
 	//printf("The number of uppercase characters in the sentence is %d\n", f3e3d(string1));
 	//printf("%d", f3e3e(string2, f3e3a(string2)));
-	printf("The number of words is %d", f3e3f(string3));
+	//printf("The number of words is %d", f3e3f(string3));
+
+	//f3e6b(-12345);
+	//f3e6c(123);
+	//f3e8b();
+	//f3e9a(305419896); //305419896 = 0x12345678
+	//f3e9b(305419896);
+	//f3e9c(305419896);
 
 	return EXIT_SUCCESS;
 }
