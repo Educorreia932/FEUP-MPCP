@@ -1,7 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+extern int f2e3di(int n);
+extern int f2e3dii(int n);
+
 extern int f3e1a(int *a, int n);
+
+extern int f3e2a(int *a, int n);
+extern long long int f3e2b(long long int *a, int n);
+extern short int f3e2c(short int *a, int n);
+extern long long int f3e2d(long long int *a, int n);
+extern int f3e2e(int *a);
 
 extern int f3e3a(char *s);
 extern int f3e3b(char a, char *s);
@@ -53,6 +62,7 @@ int main(void) {
 	//char string3[] = "A a aa, a aa.";
 
 	//histogram(string);
+	printf("%d", f2e3di(92950));
 	//printf("The number of uppercase characters in the sentence is %d\n", f3e3d(string1));
 	//printf("%d", f3e3e(string2, f3e3a(string2)));
 	//printf("The number of words is %d", f3e3f(string3));
