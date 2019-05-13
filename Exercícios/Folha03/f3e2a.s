@@ -2,10 +2,10 @@
 .global f3e2a
 .type f3e2a, "function"
 
-f3e2a:
-	ldrsw		X2, [X0], #4
+f3e2a:	
 	mov			X3, X2 //X3 - resultado/máximo
 ciclo:
+	ldrsw		X2, [X0], #4
 	cmp			X1, #0 //verifica se já chegou ao fim
 	beq			fim
 	cmp			X2, X3

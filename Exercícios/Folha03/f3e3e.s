@@ -3,17 +3,18 @@
 .type f3e3e, "function"
 
 f3e3e:
-	mov			W4, #1
-	sub   		X1, X1, #1
+	mov			X4, #1
+	sub X1, X1, #1
+	add 		X3, X0, X1
+	ADD X1, X1, #1
 ciclo:
-	ldrb		W2, [X0], #1
-	ldrb		W3, [X0]
-	cmp			W2, #0
-	beq			fim
-	cmp			W2, W3
-	sub 		X1, X1, #1
-	beq			ciclo
-	mov			W4, #0
+	cmp 		X1, #1
+	ble 		fim
+	ldrb		W8, [X0], #1
+	ldrb		W9, [X3], #-1
+	cmp			W8, W9
+	beq 		ciclo
+	mov 		X4, #0
 fim:
 	mov			X0, X4
 	ret
