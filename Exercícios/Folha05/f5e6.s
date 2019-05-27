@@ -2,7 +2,7 @@
 ciclo:
 	ldr			S2, [X0], #4 //Carrega o primeiro elemento do vetor de floats
 	sub			X1, X1, #1 //Decrementa o tamanho do vetor
-	cbz			fim, X1 //Verifica se já chegou ao fim
+	cbz			X1, fim //Verifica se já chegou ao fim
 	fcmp		S2, S0
 	blt			ciclo
 	fcmp		S2, S1

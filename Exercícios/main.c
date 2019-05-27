@@ -44,7 +44,12 @@ extern void f3e9c(int n);
 extern long int f5e6(float *V, long int n, float a, float b);
 
 extern double f5e9a(unsigned int x);
-double cos(double x);
+extern double cos(double alfa);
+
+void f6e1a(float *P, float *Q, float *R, int n);
+extern long int prodint(int *r, int *s, int n);
+extern long int prodintv(int *r, int *s, int n);
+extern long int f6e3(char *V, long int n, char val);
 
 extern int soma(int *a, int b);
 extern int media(int *a, int b);
@@ -61,10 +66,6 @@ void histogram(char *s) {
 
 		printf("\n");
 	}
-
-}
-
-double cos(double x) {
 
 }
 

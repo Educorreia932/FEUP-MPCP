@@ -1,5 +1,5 @@
 .data
-pi .double 3.141592653
+pi: .double 3.141592653
 
 .text
 .global área
@@ -10,5 +10,5 @@ pi .double 3.141592653
 	fmul		D0, D0, D0 //D0 = raio²
 	ldr			D1, pi
 	fmul		D0, D0, D1
-	str			X29, X30, [SP], #16
+	ldp			X29, X30, [SP], #16
 	ret
