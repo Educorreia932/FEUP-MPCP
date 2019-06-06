@@ -41,33 +41,29 @@ extern void f3e9a(int n);
 extern void f3e9b(int n);
 extern void f3e9c(int n);
 
+extern float f5e2a(float A, float B, float C, float D);
+extern float f5e2c(float x1, float y1, float x2, float y2);
+extern void f5e3(float *tab);
+extern double f5e4(double x, double *coefs, int n);
 extern long int f5e6(float *V, long int n, float a, float b);
+extern double f5e7(double x);
+extern double f5e8a(double x);
+extern double f5e8b(double x);
 
 extern double f5e9a(unsigned int x);
 extern double cos(double alfa);
 
-void f6e1a(float *P, float *Q, float *R, int n);
+extern void f6e1a(float *P, float *Q, float *R, int n);
 extern long int prodint(int *r, int *s, int n);
 extern long int prodintv(int *r, int *s, int n);
 extern long int f6e3(char *V, long int n, char val);
+extern void f6e4(int *Z, int n, int x);
+extern double f6e5(float *X, float *Y, int n);
+extern long int f6e7(float *V, long int n, float lim);
+extern void f6e8(float *X, float *Y, int n, float da);
 
 extern int soma(int *a, int b);
 extern int media(int *a, int b);
-
-void histogram(char *s) {
-	char alphabet[30] = "abcdefghijklmnopqrstuwvxyz";
-
-	for (int i1 = 0; i1 < 26; i1++) {
-		char a = alphabet[i1];
-		printf("%c: ", a);
-
-		for (int i2 = 0; i2 < f3e3b(a, s); i2++)
-			printf("*");
-
-		printf("\n");
-	}
-
-}
 
 int main(void) {
 	//char string1[] = "In computer Programming, a string is traditionally a sequence of characters.";
