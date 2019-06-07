@@ -15,5 +15,5 @@ ciclo:
 	sub			X1, X1, #1
 	b			ciclo
 fim:
-	fmov		D0, D2
+	fsqrt D0, D2
 	ret
