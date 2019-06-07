@@ -9,6 +9,6 @@ ciclo:
 	ldr Q0, [X0]
 	dup V1.4S, W2
 	fadd V0.4S, V0.4S, V1.4S
-	str Q0, [X0], #4
+	str Q0, [X0], #16
 fim:
 	ret

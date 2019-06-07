@@ -54,13 +54,17 @@ extern double f5e9a(unsigned int x);
 extern double cos(double alfa);
 
 extern void f6e1a(float *P, float *Q, float *R, int n);
+extern void f6e1b(float *P, int n, float k);
+extern void f6e1c(float *P, float *Q, float *R, int n, float k);
 extern long int prodint(int *r, int *s, int n);
 extern long int prodintv(int *r, int *s, int n);
 extern long int f6e3(char *V, long int n, char val);
 extern void f6e4(int *Z, int n, int x);
-extern double f6e5(float *X, float *Y, int n);
+extern void f6e5(float *pt, int n);
+extern double f6e6(double *ptV, long int n);
 extern long int f6e7(float *V, long int n, float lim);
 extern void f6e8(float *X, float *Y, int n, float da);
+extern void f6e9(float *Z1, float *Z2, float *Z, long int n);
 
 extern int soma(int *a, int b);
 extern int media(int *a, int b);
@@ -69,7 +73,6 @@ int main(void) {
 	//char string1[] = "In computer Programming, a string is traditionally a sequence of characters.";
 	//char string2[] = "ANAANA";
 	//char string3[] = "A a aa, a aa.";
-
 
 	//histogram(string);
 	//printf("%d", f2e3di(92950));
@@ -84,9 +87,13 @@ int main(void) {
 	//f3e9b(305419896);
 	//f3e9c(305419896);
 
-	int v[] = {1,3,5,7};
+	//int v[] = {1,3,5,7};
 
-	printf("%d", media(v, 4));
+	float P[] = {1.2, 2.5, 3.4, 5.5};
+	float Q[] = {2.5, 3.4, 1.2, 5.0};
+	float R[] = {};
+
+	f6e1c(P, Q, R, 4, 2.0);
 
 	return EXIT_SUCCESS;
 }
