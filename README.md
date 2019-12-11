@@ -5,4 +5,4 @@ MIEIC - 1º ano / 2º semestre ⌨
 
 Final Grade
 ----------
-> 15 / 20
+15 / 20
