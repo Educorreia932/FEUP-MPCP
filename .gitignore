@@ -3,18 +3,14 @@
 
 *.dat
 
-Exercícios/\.settings/
+# Eclipse IDE
 
-Exercícios/\.cproject
+.settings/
+.cproject
+.project
+Debug/
 
 *.axf
-
-Exercícios/\.project
-
 *.o
-
 *.mk
-
 *.d
-
-Exercícios/Debug/
